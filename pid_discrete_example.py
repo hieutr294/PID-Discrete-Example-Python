@@ -37,7 +37,7 @@ while(i<101):
 
     e_1 = setPoint-signal # store current sensor data to current error var
     
-    out = ((alpha*e_1)+(beta*e_2)+(gama*e_3)+(delta*u_1))/delta #caculate output
+    out = ((alpha*input_1)+(beta*input_2)+(gama*input_3)+(delta*u_1))/delta #caculate output
     
     e_2 = e_1 # store current sensor data to n-1 error var
     e_3 = temp # n-2 error var will store a temp var 
