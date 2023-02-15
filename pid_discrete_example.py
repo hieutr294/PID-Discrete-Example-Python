@@ -35,13 +35,13 @@ while(i<101):
     signalArr.append(signal)
     errorArr.append(setPoint-signal)
 
-    e_1 = setPoint-signal # store current sensor data to current error var
+    input_1 = setPoint-signal # store current sensor data to current error var
     
     out = ((alpha*input_1)+(beta*input_2)+(gama*input_3)+(delta*u_1))/delta #caculate output
     
-    e_2 = e_1 # store current sensor data to n-1 error var
-    e_3 = temp # n-2 error var will store a temp var 
-    temp = e_2 # store n-1 error variable to temp var
+    input_2 = input_1 # store current sensor data to n-1 error var
+    input_3 = temp # n-2 error var will store a temp var 
+    temp = input_2 # store n-1 error variable to temp var
     
     u_1 = out # current output will store to previous output variable
 
