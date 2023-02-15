@@ -47,6 +47,7 @@ while(i<101):
 
     i+=1
 
+    # code below is map output between 0 and 255 for arduino pwm
     if(out>=255):
         out=255
     elif(out<=0):
